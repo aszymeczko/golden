@@ -13,13 +13,11 @@ header {
   width: 100%;
   background-size: cover;
 }
-
 header a.logo {
   line-height: 70.5px;
   font-size: 20px;
   color: gold;
 }
-
 header ul {
   display: flex;
   list-style: none;
@@ -27,25 +25,20 @@ header ul {
   text-transform: uppercase;
   font-size: 14px;
 }
-
 header li {
   padding: 10px;
 }
-
 header .container {
   text-align: center;
   margin-top: 100px;
   color: #fff;
 }
-
 header h3 {
   font-size: 25px;
 }
-
 header h1 {
   font-size: 50px;
 }
-
 header button {
   background-color: gold;
   font-size: 15px;
@@ -57,47 +50,83 @@ header button {
   box-shadow: 1px 2px 1px grey;
 }
 
-.services {
-  background-color: #fff;
-  margin-bottom: 50px;
+section {
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
-
-.services-title {
+section .section-title {
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 50px;
+  padding-bottom: 60px;
 }
-
-.services h1 {
-  font-size: 30px;
+section .section-title h1 {
+  font-size: 40px;
   margin: 10px;
 }
-
-.services a {
-  font-size: 15px;
+section .section-title p {
+  font-size: 18px;
   font-style: italic;
   color: gray;
+  margin-top: 10px;
 }
 
-.services-item {
+.services {
+  background-color: #fff;
+}
+.services .row {
+  justify-content: center;
+}
+.services .services-item {
   text-align: center;
 }
-
-.services-item i {
-  font-size: 45px;
+.services .services-item i {
+  font-size: 40px;
   color: gold;
+  border: 4px solid gold;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 75px;
 }
-
-.services-item p {
+.services .services-item p {
   font-size: 15px;
+  text-align: justify;
 }
 
 .portfolio {
   background-color: #f7f7f7;
+  padding-bottom: 90px;
+}
+.portfolio .portfolio-items {
+  justify-content: center;
+  text-align: center;
+}
+.portfolio .portfolio-items div {
+  background-color: #fff;
+  padding: 0;
+  margin: 15px;
+}
+.portfolio .portfolio-items img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.portfolio .portfolio-items h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.portfolio .portfolio-items p {
+  font-size: 15px;
+  font-style: italic;
+  color: gray;
+  margin-top: 0;
 }
 
 footer {
   background-color: #fff;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFNBQUE7QUNDSjs7QURFQTtFQUNJLGFBQUE7RUFDQSw2QkFBQTtBQ0NKOztBREVBO0VBQ0kseUZBQUE7RUFDQSxhQUFBO0VBQ0EsV0FBQTtFQUNBLHNCQUFBO0FDQ0o7O0FERUE7RUFDSSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxXQUFBO0FDQ0o7O0FERUE7RUFDSSxhQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0VBQ0EseUJBQUE7RUFDQSxlQUFBO0FDQ0o7O0FERUE7RUFDSSxhQUFBO0FDQ0o7O0FERUE7RUFDSSxrQkFBQTtFQUNBLGlCQUFBO0VBQ0EsV0FBQTtBQ0NKOztBREVBO0VBQ0ksZUFBQTtBQ0NKOztBREVBO0VBQ0ksZUFBQTtBQ0NKOztBREVBO0VBQ0ksc0JBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLDRCQUFBO0FDQ0o7O0FERUE7RUFDSSxzQkFBQTtFQUNBLG1CQUFBO0FDQ0o7O0FERUE7RUFDSSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsbUJBQUE7QUNDSjs7QURFQTtFQUNJLGVBQUE7RUFDQSxZQUFBO0FDQ0o7O0FERUE7RUFDSSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0FDQ0o7O0FERUE7RUFDSSxrQkFBQTtBQ0NKOztBREVBO0VBQ0ksZUFBQTtFQUNBLFdBQUE7QUNDSjs7QURFQTtFQUNJLGVBQUE7QUNDSjs7QURFQTtFQUNJLHlCQUFBO0FDQ0o7O0FERUE7RUFDSSxzQkFBQTtBQ0NKIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFNBQUE7QUNDSjs7QURFQTtFQUNJLGFBQUE7RUFDQSw2QkFBQTtBQ0NKOztBREdBO0VBQ0kseUZBQUE7RUFDQSxhQUFBO0VBQ0EsV0FBQTtFQUNBLHNCQUFBO0FDQUo7QURFSTtFQUNJLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLFdBQUE7QUNBUjtBREdJO0VBQ0ksYUFBQTtFQUNBLGdCQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQUFBO0VBQ0EsZUFBQTtBQ0RSO0FESUk7RUFDSSxhQUFBO0FDRlI7QURLSTtFQUNJLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxXQUFBO0FDSFI7QURNSTtFQUNJLGVBQUE7QUNKUjtBRE9JO0VBQ0ksZUFBQTtBQ0xSO0FEUUk7RUFDSSxzQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsNEJBQUE7QUNOUjs7QURVQTtFQUNJLGlCQUFBO0VBQ0Esb0JBQUE7QUNQSjtBRFNJO0VBQ0ksa0JBQUE7RUFDQSxvQkFBQTtBQ1BSO0FEVUk7RUFDSSxlQUFBO0VBQ0EsWUFBQTtBQ1JSO0FEV0k7RUFDSSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7QUNUUjs7QURhQTtFQUNJLHNCQUFBO0FDVko7QURZSTtFQUNJLHVCQUFBO0FDVlI7QURhSTtFQUNJLGtCQUFBO0FDWFI7QURhUTtFQUNJLGVBQUE7RUFDQSxXQUFBO0VBQ0Esc0JBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtBQ1haO0FEY1E7RUFDSSxlQUFBO0VBQ0EsbUJBQUE7QUNaWjs7QURrQkE7RUFDSSx5QkFBQTtFQUNBLG9CQUFBO0FDZko7QURpQkk7RUFDSSx1QkFBQTtFQUNBLGtCQUFBO0FDZlI7QURrQkk7RUFDSSxzQkFBQTtFQUNBLFVBQUE7RUFDQSxZQUFBO0FDaEJSO0FEbUJJO0VBQ0ksV0FBQTtFQUNBLGFBQUE7RUFDQSxvQkFBQTtLQUFBLGlCQUFBO0FDakJSO0FEcUJJO0VBQ0ksZUFBQTtFQUNBLGtCQUFBO0FDbkJSO0FEc0JJO0VBQ0ksZUFBQTtFQUNBLGtCQUFBO0VBQ0EsV0FBQTtFQUNBLGFBQUE7QUNwQlI7O0FEd0JBO0VBQ0ksc0JBQUE7RUFDQSxhQUFBO0VBQ0EsNkJBQUE7QUNyQkoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
