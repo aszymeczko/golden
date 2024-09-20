@@ -5,18 +5,19 @@ body {
 nav {
     display: flex;
     justify-content: space-evenly;
+    padding-top: 15px;
 }
 
 
 header {
     background-image: url("https://i.postimg.cc/k5QJThVS/pexels-polina-kovaleva-5546893.jpg");
-    height: 500px;
+    height: 700px;
     width: 100%;
     background-size: cover;
     
     a.logo {
         line-height: 70.5px;
-        font-size: 20px;
+        font-size: 23px;
         color: gold;
     }
 
@@ -34,33 +35,37 @@ header {
 
     .container {
         text-align: center;
-        margin-top: 100px;
+        margin-top: 200px;
         color:#fff;
     }
 
     h3 {
-        font-size: 25px;
+        font-size: 40px;
+        margin-bottom: 0;
     }
     
     h1 {
-        font-size: 50px;
+        font-size: 90px;
+        margin-top: 10px;
     }
     
     button {
         background-color: gold;
         font-size: 15px;
-        padding: 10px 25px;
+        padding: 10px 40px;
         border-radius: 3px;
         border: none;
         color:#fff;
-        height: 40px;
+        height: 50px;
         box-shadow: 1px 2px 1px grey;
+        text-transform: uppercase;
+        font-weight: bold;
     }
 }
 
 section {
     padding-top: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 
     .section-title {
         text-align: center;
@@ -70,6 +75,7 @@ section {
     .section-title h1 {
         font-size: 40px;
         margin: 10px;
+        text-transform: uppercase;
     }
 
     .section-title p {
@@ -104,9 +110,9 @@ section {
         p {
             font-size: 15px;
             text-align: justify;
+            color: gray;
         }
     }
-
 }
 
 .portfolio {
@@ -146,6 +152,27 @@ section {
 
 footer {
     background-color: #fff;
-    display: flex;
-    justify-content: space-evenly;
+    padding: 25px;
+
+    .row {
+        justify-content: center;
+
+        div {
+            margin: 0 20px;
+        }
+
+        .icon {
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .icon i {
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+            padding: 12px;
+            border-radius: 50%;
+            margin: 3px;
+        }
+    }
 }
