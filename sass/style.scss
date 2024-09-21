@@ -6,10 +6,15 @@ nav {
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
-    z-index: 2;
+    z-index: 3;
     position: relative;
-}
 
+    div {
+        input, label {
+            display: none;
+        }
+    }
+}
 
 header {
     background-image: url("https://i.postimg.cc/k5QJThVS/pexels-polina-kovaleva-5546893.jpg");
@@ -56,13 +61,16 @@ header {
             font-family: "Roboto", sans-serif;
             font-weight: 500;
             padding-left: 15px;
+
+            &:hover {
+                color: gold;
+            }
         }
     }
 
-
     .container {
         text-align: center;
-        margin-top: 200px;
+        padding-top: 160px;
         color:#fff;
         z-index: 2;
         position: relative;
@@ -87,7 +95,6 @@ header {
     button {
         background-color: gold;
         font-size: 17px;
-        // padding: 10px 50px;
         border-radius: 3px;
         border: none;
         color:#fff;
@@ -100,6 +107,10 @@ header {
         font-family: "Roboto", sans-serif;
         font-weight: 600;
         letter-spacing: 1px;
+
+        &:hover {
+            color: #000;
+        }
     }
 }
 
@@ -184,7 +195,6 @@ section {
         width: 100%;
         height: 250px;
         object-fit: cover;
-        
     }
 
     .portfolio-items h3 {
@@ -216,18 +226,146 @@ footer {
         }
 
         .icon {
+            cursor: pointer;
             text-align: center;
             line-height: 50px;
+
+            i {
+                background-color: #000;
+                color: #fff;
+                font-size: 20px;
+                padding: 12px;
+                border-radius: 50%;
+                margin: 3px;
+            }
+        }
+    }
+}
+
+/* Media */
+@media (max-width: 767px) {
+    header {
+        nav {
+            div {
+                label {
+                    cursor: pointer;
+                    border: 1px solid gold;
+                    border-radius: 4px;
+                    background:inherit;
+                    color: gold;
+                    display: flex;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    float: right;
+                    margin-right: 40px;
+                    position: relative;
+                    z-index: 4;
+
+                    &:hover {
+                        color:#fff;
+                        border-color: #fff;
+                    }
+                }
+
+                .fa-solid {
+                    line-height: 40px;
+                }
+
+                input[type='checkbox']:checked + label{
+                    color: #fff;
+                    border-color: #fff;
+
+                    &:hover {
+                        color: #000;
+                        border-color: #000;
+                    }
+                }
+
+                input[type='checkbox']:checked ~ ul {
+                    background: gold;
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    text-align: center;
+                    left: 0;
+                    top: 0;
+                    padding: 0;
+                    margin: 0;
+                    
+                    li {
+                        font-size: 20px;
+                        padding: 15px 0;
+                        
+                        a:hover {
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .container {
+            padding-top: 60px;
         }
 
-        .icon i {
-            background-color: #000;
-            color: #fff;
-            font-size: 20px;
-            padding: 12px;
-            border-radius: 50%;
-            margin: 3px;
-            cursor: pointer;
+        a.logo {
+            padding-left: 40px;
+        }
+
+        nav  div {
+            width: 100%;
+        }
+
+        ul {
+            width: 100%;
+            display: none;
+        }
+
+        li {
+            padding: 0;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 70px;
+        }
+    } 
+    
+    section {
+        padding-top: 50px;
+        padding-bottom: 0px;
+    }
+
+    .services-item p {
+        margin: 30px 50px 70px 70px;
+    }
+
+    .portfolio {
+        padding-bottom: 30px;
+
+        .portfolio-items img {
+            width: 75%;
+        }
+    }
+
+    section .section-title {
+        padding-bottom: 30px;
+    }
+
+    footer p {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        
+        p {
+            text-align: center;
         }
     }
 }
